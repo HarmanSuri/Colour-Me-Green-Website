@@ -6,7 +6,10 @@ import frontInfo from "./components/frontInfo";
 function App() {
   return (
     <Router>
-      <div className='App'>
+      <div
+        className='App'
+        style={{ backgroundColor: "#00cc66", color: "white" }}
+      >
         <div className='container'>
           <Navbar />
           <Route path='/' component={frontInfo} />
