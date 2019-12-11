@@ -1,8 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
+import Charity from "./components/Charity";
 import Navbar from "./components/Navbar";
 import frontInfo from "./components/frontInfo";
+
 function App() {
   return (
     <Router>
@@ -13,6 +15,7 @@ function App() {
         <div className='container'>
           <Navbar />
           <Route path='/' component={frontInfo} />
+          <Charity />
         </div>
       </div>
     </Router>
