@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-
-export class frontInfo extends Component {
-  render() {
+	
+	export class climateChangeEvents extends Component {
+		render() {
     return (
       <div className='container'>
         <div
@@ -9,8 +9,7 @@ export class frontInfo extends Component {
           style={{ backgroundColor: "#049660" }}
         >
           <h3 class='mb-4 font-weight-light'>
-            Flooding Cities Somewhere, Raging Droughts Elsewhere. Burning
-            Forests, and Melting Ice Caps.
+            Climate Change Events
           </h3>
           <img
             src='https://ichef.bbci.co.uk/news/660/cpsprodpb/11178/production/_99180007_mediaitem99180006.jpg'
@@ -92,7 +91,7 @@ export class frontInfo extends Component {
               >
                 Engage with your local community about new research regarding
                 climate change and community intiatives that you can take.{" "}
-                <a href='/climateChangeEvents'>Learn more</a> about different climate change events
+                <a href='/'>Learn more</a> about different climate change events
                 in your area.
               </p>
             </div>
@@ -103,4 +102,4 @@ export class frontInfo extends Component {
   }
 }
 
-export default frontInfo;
+export default climateChangeEvents;

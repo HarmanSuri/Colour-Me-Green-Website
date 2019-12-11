@@ -1,9 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 
-import Charity from "./components/Charity";
 import Navbar from "./components/Navbar";
 import frontInfo from "./components/frontInfo";
+import lifestyleChanges from "./components/lifestyleChanges";
+import Recycling from "./components/Recycling";
+import Charity from "./components/Charity";
+import climateChangeEvents from "./components/climateChangeEvents";
 
 function App() {
   return (
@@ -15,7 +19,10 @@ function App() {
         <div className='container'>
           <Navbar />
           <Route path='/' component={frontInfo} />
+          <lifestyleChanges />
+          <Recycling />
           <Charity />
+          <climateChangeEvents />
         </div>
       </div>
     </Router>
